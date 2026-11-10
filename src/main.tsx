@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createRouter, createRoute, createRootRoute } from '@tanstack/react-router'
-import { Layout } from './layout'
+import { Layout } from '/layout'
 import '../styles.css'
 
 // 1. Create a root route layout wrapper
