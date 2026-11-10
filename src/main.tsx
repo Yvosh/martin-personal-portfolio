@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createRouter, createRoute, createRootRoute } from '@tanstack/react-router'
-import { Layout } from 'layout'
+import { Layout } from './layout.tsx'
 import '../styles.css'
+import '../theme.css'
 
 // 1. Create a root route layout wrapper
 const rootRoute = createRootRoute({
@@ -27,5 +28,3 @@ const router = createRouter({ routeTree })
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Layout />
-  </React.StrictMode>
-)
