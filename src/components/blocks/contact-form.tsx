@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/cn";
 import { CheckCircle2, ChevronDown, LoaderCircle } from "lucide-react";
 import * as React from "react";
-import form from "@vibe/form";
+// import form from "@vibe/form";
 
 type ContactField = {
   name: string;
