@@ -1,0 +1,86 @@
+{
+  "site": {
+    "lang": "en",
+    "meta": [
+      {
+        "property": "og:site_name",
+        "content": "Yvosh Portfolio"
+      }
+    ],
+    "links": [],
+    "scripts": []
+  },
+  "routes": {
+    "/": {
+      "meta": [
+        {
+          "title": "Yvosh | Web Designer Portfolio"
+        },
+        {
+          "name": "description",
+          "content": "Portfolio of Yvosh, a web designer building clean, responsive Duda websites, plus academic projects and graphic design work."
+        },
+        {
+          "property": "og:title",
+          "content": "Yvosh | Web Designer Portfolio"
+        },
+        {
+          "property": "og:description",
+          "content": "Portfolio of Yvosh, a web designer building clean, responsive Duda websites, plus academic projects and graphic design work."
+        }
+      ]
+    },
+    "/work/$slug": {
+      "meta": [
+        {
+          "title": "Featured Project | Yvosh"
+        },
+        {
+          "name": "description",
+          "content": "A featured website project by Yvosh, built on the Duda website builder with a responsive, user-friendly design."
+        }
+      ]
+    },
+    "/academic/$slug": {
+      "meta": [
+        {
+          "title": "Academic Project | Yvosh"
+        },
+        {
+          "name": "description",
+          "content": "An academic project by Yvosh with screenshots of its pages, the tools used and how it was built."
+        }
+      ]
+    },
+    "/contact": {
+      "meta": [
+        {
+          "title": "Contact Yvosh | Web Designer Portfolio"
+        },
+        {
+          "name": "description",
+          "content": "Get in touch with Yvosh about a website project. Send a message through the form or reach out by email, phone or from the Philippines."
+        },
+        {
+          "property": "og:title",
+          "content": "Contact Yvosh | Web Designer Portfolio"
+        },
+        {
+          "property": "og:description",
+          "content": "Get in touch with Yvosh about a website project. Send a message through the form or reach out by email."
+        }
+      ]
+    },
+    "/$": {
+      "meta": [
+        {
+          "title": "Page not found"
+        },
+        {
+          "name": "robots",
+          "content": "noindex"
+        }
+      ]
+    }
+  }
+}
