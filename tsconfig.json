@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2022",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -14,7 +14,13 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Relaxed validation rules to avoid build crashes */
+    /* Path mapping shortcuts */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    /* Bypass strict framework validations */
     "strict": false,
     "noImplicitAny": false,
     "strictNullChecks": false,
