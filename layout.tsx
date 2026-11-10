@@ -1,5 +1,5 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
-import form from "@vibe/form";
+// import form from "@vibe/form";
 import { Mail, MapPin, Phone, Send, User } from "lucide-react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { academic, featured } from "@/data/projects";
