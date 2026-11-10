@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Layout from './layout'
+import { Layout } from './layout'
 import '../styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
