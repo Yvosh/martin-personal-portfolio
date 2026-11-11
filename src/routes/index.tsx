@@ -614,7 +614,7 @@ function HomePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 md:grid-cols-[2fr_3fr]">
           <div className={`relative w-full max-w-sm ${reveal}`}>
             <img
-              src="../../public/portrait.jpg"
+              src="../../public/portrait.png"
               width={896}
               height={1152}
               loading="lazy"
