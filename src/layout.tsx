@@ -154,10 +154,10 @@ function EmailForm() {
     const subject = encodeURIComponent("Portfolio Contact");
     const body = encodeURIComponent(`Hello Yvosh,\n\nMy email is: ${email}`);
 
-    window.location.href =
-      `mailto:cailayvosh@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:cailayvosh@gmail.com?subject=${subject}&body=${body}`;
 
     setStatus("sent");
+    setEmail("");
   }
 
   return (
@@ -183,12 +183,12 @@ function EmailForm() {
       </div>
 
       <p aria-live="polite" className="mt-2 min-h-5 text-sm text-muted-foreground">
-        {status === "sent" && "Your email application should open shortly."}
+        {status === "sent" &&
+          "If your email app didn't open, you can write to me at cailayvosh@gmail.com."}
       </p>
     </form>
   );
 }
-
 
 function SiteFooter() {
   const menu = "text-muted-foreground transition-colors hover:text-foreground";
