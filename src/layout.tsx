@@ -262,11 +262,6 @@ function SiteFooter() {
                 Academic Work
               </Link>
             </li>
-            <li>
-              <Link to="/contact" className={menu}>
-                Contact Us
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
