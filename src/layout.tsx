@@ -47,9 +47,6 @@ function SiteHeader() {
               <path d="M2 4l4 4 4-4z" />
             </svg>
           </button>
-          <Link to="/contact" className={`${link} ${idle}`}>
-            Contact Us
-          </Link>
         </nav>
       </div>
       {worksOpen && (
