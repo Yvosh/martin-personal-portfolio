@@ -143,28 +143,25 @@ const socials = [
   },
 ];
 
+
 function EmailForm() {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "sent">("idle");
 
-  async function onSubmit(e: FormEvent) {
+  function onSubmit(e: FormEvent) {
     e.preventDefault();
-    if (status === "sending") return;
-    setStatus("sending");
-    try {
-      await form.submit({
-        formId: "footer-email",
-        fields: [{ name: "email", label: "Email", type: "email", value: email }],
-      });
-      setStatus("sent");
-      setEmail("");
-    } catch {
-      setStatus("error");
-    }
+
+    const subject = encodeURIComponent("Portfolio Contact");
+    const body = encodeURIComponent(`Hello Yvosh,\n\nMy email is: ${email}`);
+
+    window.location.href =
+      `mailto:cailayvosh@gmail.com?subject=${subject}&body=${body}`;
+
+    setStatus("sent");
   }
 
   return (
-    <form data-vibe-form-id="footer-email" onSubmit={onSubmit} className="mt-4">
+    <form onSubmit={onSubmit} className="mt-4">
       <div className="flex flex-col gap-2 min-[420px]:flex-row">
         <input
           type="email"
@@ -175,22 +172,23 @@ function EmailForm() {
           aria-label="Your email address"
           className="h-11 min-w-0 flex-1 rounded-full border border-border bg-card px-4 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring"
         />
+
         <button
           type="submit"
-          disabled={status === "sending"}
-          className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
+          className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
         >
           <Send className="size-4" aria-hidden="true" />
-          {status === "sending" ? "Sending" : "Send"}
+          Send
         </button>
       </div>
+
       <p aria-live="polite" className="mt-2 min-h-5 text-sm text-muted-foreground">
-        {status === "sent" && "Thanks! I will email you soon."}
-        {status === "error" && "Sorry, that did not send. Please try again."}
+        {status === "sent" && "Your email application should open shortly."}
       </p>
     </form>
   );
 }
+
 
 function SiteFooter() {
   const menu = "text-muted-foreground transition-colors hover:text-foreground";
