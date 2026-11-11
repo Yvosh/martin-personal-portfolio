@@ -3,12 +3,18 @@ import { cn } from "@/lib/cn";
 import {
   Link,
   useCanGoBack,
-  useHydrated,
   useRouter,
   type LinkProps,
 } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, House } from "lucide-react";
 import * as React from "react";
+import { useEffect, useState } from "react";
+
+function useHydrated() {
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => setHydrated(true), []);
+  return hydrated;
+}
 
 type NotFoundHref = NonNullable<LinkProps["to"]> | `#${string}`;
 
