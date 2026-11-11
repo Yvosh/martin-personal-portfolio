@@ -86,7 +86,7 @@ const graphics = [
   { name: "yvosh-graphic-g1-5", label: "Citrusly Good", views: ["yvosh-graphic-g1-5", "yvosh-graphic-g1-1", "yvosh-graphic-g1-2", "yvosh-graphic-g1-3", "yvosh-graphic-g1-4", "yvosh-graphic-g1-6", "yvosh-graphic-g1-7", "yvosh-graphic-g1-8"], w: 1587, h: 2245 },
   { name: "yvosh-graphic-g2-4", label: "Nutriglow", views: ["yvosh-graphic-g2-4", "yvosh-graphic-g2-2", "yvosh-graphic-g2-3", "yvosh-graphic-g2-5", "yvosh-graphic-g2-1", "yvosh-graphic-g2-6", "yvosh-graphic-g2-7", "yvosh-graphic-g2-8"], w: 1587, h: 2245 },
   { name: "yvosh-graphic-g3-5", label: "OISHI SUSHI (Brochure)", views: ["yvosh-graphic-g3-5", "yvosh-graphic-g3-1", "yvosh-graphic-g3-2", "yvosh-graphic-g3-3", "yvosh-graphic-g3-4"], w: 2000, h: 1500 },
-  { name: "yvosh-graphic-cover", label: "OISHI SUSHI", views: ["/OH MY SUSHI.png"], w: 896, h: 1152 },
+  { name: "yvosh-graphic-cover", label: "OISHI SUSHI", views: ["../../public/OH MY SUSHI.png"], w: 896, h: 1152 },  
   { name: "yvosh-graphic-g4-1", label: "OISHI SUSHI (Carousel Instagram Post)", views: ["yvosh-graphic-g4-1", "yvosh-graphic-g4-0", "yvosh-graphic-g4-2", "yvosh-graphic-g4-3", "yvosh-graphic-g4-4", "yvosh-graphic-g4-5", "yvosh-graphic-g4-6", "yvosh-graphic-g4-7", "yvosh-graphic-g4-8"], w: 2000, h: 1500 },
   { name: "graphic-normal-distribution", label: "Normal Distribution (Infographic)", views: ["graphic-normal-distribution"], w: 800, h: 2600 },
   { name: "graphic-dads-day", label: "Dad's Day Bento Cake (Poster)", views: ["graphic-dads-day"], w: 1080, h: 1920 },
