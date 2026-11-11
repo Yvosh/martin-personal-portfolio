@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Layout } from './layout';
+import { RouterProvider } from '@tanstack/react-router';
+import { router } from './router';
 
 import '../styles.css';
 import '../theme.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Layout>
-      {/* Your application content */}
-    </Layout>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
