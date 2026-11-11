@@ -27,4 +27,4 @@ const router = createRouter({ routeTree })
 // 4. Render the app wrapped in the missing RouterProvider
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Layout />
+);
