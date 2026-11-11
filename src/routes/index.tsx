@@ -663,11 +663,12 @@ function HomePage() {
                 </span>
               ))}
             </div>
-            <Link to="/contact"
-              className="mt-8 inline-flex h-12 items-center rounded-full bg-primary px-6 font-medium text-primary-foreground transition-opacity hover:opacity-85"
-            >
-              Contact Me
-            </Link>
+<a
+  href="mailto:cailayvosh@gmail.com"
+  className="mt-8 inline-flex h-12 items-center rounded-full bg-primary px-6 font-medium text-primary-foreground transition-opacity hover:opacity-85"
+>
+  Contact Me
+</a>
           </div>
         </div>
       </section>
