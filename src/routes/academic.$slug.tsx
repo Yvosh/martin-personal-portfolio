@@ -114,33 +114,6 @@ function AcademicPage() {
             Next: {next.title} <span aria-hidden="true">→</span>
           </Link>
         </div>
-          {
-    slug: "website-proposal-redesigning",
-    cover: "/1st.png",
-    tag: "Design",
-    title: "Website Proposal Redesigning",
-    text: "A proposed redesign of the Bundle of Joy website (bundleofjoy.com.ph), covering the desktop pages and a mobile version.",
-    details: [
-      ["Designed With", "Figma"],
-      ["Project Type", "Proposed redesign"],
-    ],
-    image: "/1st.png",
-    color: c18,
-    screenshots: ["/1st.png", "/Logged%20In-1.png", "/Moms%20Club%20Reg.png"],
-    gallery: [
-      "/1st.png",
-      "/Logged%20In-1.png",
-      "/Logged%20In-2.png",
-      "/Moms%20Club%20Reg.png",
-      "/Login%20%282%29.png",
-      "/iPhone%2014%20%26%2015%20Pro%20Max%20-%205.png",
-      "/iPhone%2014%20%26%2015%20Pro%20Max%20-%204.png",
-    ],
-    gallerySections: [
-      { title: "Desktop version", start: 0 },
-      { title: "Mobile version", start: 4 },
-    ],
-  },
       </main>
     </div>
   );
