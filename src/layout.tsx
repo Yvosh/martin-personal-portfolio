@@ -328,7 +328,7 @@ function Splash() {
         className="mt-10 flex flex-col items-center gap-2 text-sm font-medium text-muted-foreground animate-in fade-in fill-mode-both duration-700"
         style={{ animationDelay: "1400ms" }}
       >
-        Scroll to enter
+        Tap to proceed
         <span className="animate-bounce text-xl" aria-hidden="true">
           ↓
         </span>
