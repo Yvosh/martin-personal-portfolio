@@ -195,6 +195,8 @@ function SiteFooter() {
               </a>
             ))}
           </div>
+                  </div>
+
 
         <div className="md:pl-12 lg:pl-20">
           <p className="font-bold">Contact info</p>
