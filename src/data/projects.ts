@@ -311,7 +311,7 @@ export const academic: AcademicProject[] = [
       ["Designed With", "Figma"],
       ["Project Type", "Proposed redesign"],
     ],
-    image: "/1st.png",
+    image: "bundle_of_joy.png",
     color: c18,
     screenshots: ["/1st.png", "/Logged%20In-1.png", "/Moms%20Club%20Reg.png"],
     gallery: [
