@@ -196,9 +196,15 @@ function SiteFooter() {
           <p className="text-3xl font-extrabold tracking-tighter">
             yvosh<span className="text-[var(--color-21)]">.</span>
           </p>
-          <p className="mt-4 font-bold">Send me an email</p>
-          <p className="text-sm text-muted-foreground">Leave your address and I will get back to you.</p>
-          <EmailForm />
+<p className="mt-4 font-bold">Get in touch</p>
+<p className="text-sm text-muted-foreground">Have a project in mind? Send me an email and I will get back to you.</p>
+<a
+  href="mailto:cailayvosh@gmail.com?subject=Portfolio%20Inquiry"
+  className="mt-4 inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+>
+  <Send className="size-4" aria-hidden="true" />
+  Send me an email
+</a>
           <div className="mt-2 flex flex-wrap gap-2">
             {socials.map((s) => (
               <a
