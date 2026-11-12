@@ -98,7 +98,7 @@ const graphics = [
 { name: "/Beige%20White%20Elegant%20Minimalist%20Bakery%20Promotion%20Instagram%20Story%20-%201.jpg", label: "Bakery Promotion (Instagram Story)", views: ["/Beige%20White%20Elegant%20Minimalist%20Bakery%20Promotion%20Instagram%20Story%20-%201.jpg", "/Beige%20White%20Elegant%20Minimalist%20Bakery%20Promotion%20Instagram%20Story%20-%204.jpg", "/Beige%20White%20Elegant%20Minimalist%20Bakery%20Promotion%20Instagram%20Story%20-%208.jpg"], w: 1080, h: 1920 },
 { name: "/1000031643_e9ef8024b329c8f2cc6a5c20b3504911-2_13_2026%2C%208_36_40%20AM.png", label: "Order Now (Instagram Post)", views: ["/1000031643_e9ef8024b329c8f2cc6a5c20b3504911-2_13_2026%2C%208_36_40%20AM.png"], w: 1080, h: 1080 },
 { name: "/Brown%20and%20White%20Coffee%20Buy%201%20Get%202%20Instagram%20Post%20-%201.jpg", label: "Order Now: Coffee Buy 1 Get 2 (Instagram Post)", views: ["/Brown%20and%20White%20Coffee%20Buy%201%20Get%202%20Instagram%20Post%20-%201.jpg"], w: 1080, h: 1080 },
-{ name: "/1000011677_0af0d83706bb5111e2f7cc4be31e5031-2_13_2026%2C%204_32_24%20AM.jpg", label: "Laminated Nametag (Poster and Post)", views: ["/1000011677_0af0d83706bb5111e2f7cc4be31e5031-2_13_2026%2C%204_32_24%20AM.jpg", "/post%20-%203.jpg"], w: 1080, h: 1350 },
+{ name: "/1000011677_0af0d83706bb5111e2f7cc4be31e5031-2_13_2026%2C%204_32_24%20AM.jpg", label: "Laminated Nametag (Poster and Post)", views: ["/1000011677_0af0d83706bb5111e2f7cc4be31e5031-2_13_2026%2C%204_32_24%20AM.jpg", "/Post%20-%203.jpg"], w: 1080, h: 1350 },
 ];
 
 const graphicColumns = [[0, 6, 10, 12], [1, 7, 8, 13], [2, 4, 5, 14], [3, 9, 11, 15]];
