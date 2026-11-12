@@ -536,7 +536,7 @@ function HomePage() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between bg-[var(--color-19)] px-4 py-3 text-white">
-              <span className="font-bold">Other CMS builders.xlsx</span>
+              <span className="font-bold">Other CMS builders</span>
               <button
                 type="button"
                 onClick={() => setCmsOpen(false)}
