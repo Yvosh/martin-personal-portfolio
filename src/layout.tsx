@@ -165,32 +165,36 @@ function SiteFooter() {
             <Send className="size-4" aria-hidden="true" />
             Send me an email
           </a>
+          
           <div className="mt-4 flex flex-wrap gap-2">
-           {socials.map((s) => (
-  <a
-    key={s.label}
-    href={s.href}
-    target="_blank"
-    rel="noreferrer"
-    aria-label={s.label}
-    className="flex size-10 items-center justify-center rounded-full border border-border bg-card text-sm font-extrabold transition-transform hover:-translate-y-0.5"
-  >
-    {s.paths ? (
-      <svg viewBox="0 0 24 24" className="size-5 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        {s.paths.map((d) => (
-          <path key={d} d={d} />
-        ))}
-      </svg>
-    ) : (
-      s.text
-    )}
-  </a>
-))}
-                </svg>
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={s.label}
+                className="flex size-10 items-center justify-center rounded-full border border-border bg-card text-sm font-extrabold transition-transform hover:-translate-y-0.5"
+              >
+                {s.paths ? (
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="size-5 fill-none stroke-current"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    {s.paths.map((d) => (
+                      <path key={d} d={d} />
+                    ))}
+                  </svg>
+                ) : (
+                  s.text
+                )}
               </a>
             ))}
           </div>
-        </div>
 
         <div className="md:pl-12 lg:pl-20">
           <p className="font-bold">Contact info</p>
