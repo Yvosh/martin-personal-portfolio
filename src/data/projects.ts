@@ -2,10 +2,7 @@ const CDN = "https://irp.cdn-website.com/8cef085e/dms3rep/multi/opt/";
 
 const jpgImages = new Set(["yvosh-graphic-g2-2", "yvosh-graphic-g2-3", "yvosh-graphic-g2-4", "yvosh-graphic-g2-5"]);
 
-export const img = (name: string, w: number) =>
-  name.startsWith("/")
-    ? name
-    : `${CDN}${name}-${w}w.${jpgImages.has(name) ? "jpg" : "png"}`;
+export const img = (name: string, w: number) => `${CDN}${name}-${w}w.${jpgImages.has(name) ? "jpg" : "png"}`;
 
 export type FeaturedProject = {
   slug: string;
