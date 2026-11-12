@@ -303,7 +303,7 @@ export const academic: AcademicProject[] = [
 
   {
     slug: "website-proposal-redesigning",
-    cover: "/1st.png",
+    cover: "bundle_of_joy.png",
     tag: "Design",
     title: "Website Proposal Redesigning",
     text: "A proposed redesign of the Bundle of Joy website (bundleofjoy.com.ph), covering the desktop pages and a mobile version.",
