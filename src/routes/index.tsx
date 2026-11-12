@@ -22,7 +22,7 @@ const toolGroups: { title: string; items: string[][]; extra?: string }[] = [
   {
     title: "Web design",
     items: [
-      ["Duda", "/duda.png"],
+["Duda", "/duda.png"],
       ["WordPress", "logo-wordpress"],
       ["Wix", "logo-wix"],
       ["Squarespace", "logo-squarespace"],
@@ -50,7 +50,7 @@ const toolGroups: { title: string; items: string[][]; extra?: string }[] = [
     items: [
       ["Photoshop", "logo-photoshop"],
       ["Canva", "logo-canva"],
-      ["CapCut", "logo-capcut"],
+["CapCut", "/capcut.png"],
     ],
   },
 ];
