@@ -105,7 +105,9 @@ const graphics = [
 { name: "/1000031763_cbb9771880ff50578b9bde9bb2cde624-2_13_2026%2C%208_33_39%20AM.jpg", label: "Flowers (Instagram Post)", views: ["/1000031763_cbb9771880ff50578b9bde9bb2cde624-2_13_2026%2C%208_33_39%20AM.jpg", "/1000031760_cbb9771880ff50578b9bde9bb2cde624-2_13_2026%2C%208_33_38%20AM.jpg", "/1000031754_c663a6af690254268612feb94e23af45-2_13_2026%2C%208_33_38%20AM.jpg"], w: 1080, h: 1080 },
 ];
 
-const graphicColumns = [[0, 6, 10], [1, 7, 8], [2, 4, 5, 15, 14], [3, 9]];
+const graphicColumns = [0, 1, 2, 3].map((c) =>
+  graphics.map((_, i) => i).filter((i) => i % 4 === c)
+);
 
 const reveal =
   "animate-in fade-in slide-in-from-bottom-8 fill-mode-both duration-700 [animation-timeline:view()] [animation-range:entry_10%_cover_35%] motion-reduce:animate-none";
