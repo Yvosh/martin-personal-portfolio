@@ -95,9 +95,13 @@ const graphics = [
   { name: "graphic-recharge-poster", label: "ReCharge (Poster)", views: ["graphic-recharge-poster"], w: 2880, h: 6528 },
   { name: "graphic-pokemon-invite", label: "Pokemon Birthday Invitation", views: ["graphic-pokemon-invite"], w: 1240, h: 1748 },
 { name: "/Beige%20White%20Elegant%20Minimalist%20Bakery%20Promotion%20Instagram%20Story%20-%2019.jpg", label: "Valentine's Promo (Poster Set)", views: ["/Beige%20White%20Elegant%20Minimalist%20Bakery%20Promotion%20Instagram%20Story%20-%2019.jpg", "/Beige%20White%20Elegant%20Minimalist%20Bakery%20Promotion%20Instagram%20Story%20-%2023.jpg", "/Beige%20White%20Elegant%20Minimalist%20Bakery%20Promotion%20Instagram%20Story%20-%2021.jpg"], w: 1080, h: 1920 },
+{ name: "/promo-story-1.jpg", label: "Bakery Promotion (Instagram Story)", views: ["/promo-story-1.jpg", "/promo-story-4.jpg", "/promo-story-8.jpg"], w: 1080, h: 1920 },
+{ name: "/order-now-1.png", label: "Order Now (Instagram Post)", views: ["/order-now-1.png"], w: 1080, h: 1080 },
+{ name: "/order-now-coffee.jpg", label: "Order Now: Coffee Buy 1 Get 2 (Instagram Post)", views: ["/order-now-coffee.jpg"], w: 1080, h: 1080 },
+{ name: "/nametag-poster.jpg", label: "Laminated Nametag (Poster and Post)", views: ["/nametag-poster.jpg", "/nametag-post.jpg"], w: 1080, h: 1350 },
 ];
 
-const graphicColumns = [[0, 6, 10], [1, 7, 8], [2, 4, 5], [3, 9, 11]];
+const graphicColumns = [[0, 6, 10, 12], [1, 7, 8, 13], [2, 4, 5, 14], [3, 9, 11, 15]];
 
 const reveal =
   "animate-in fade-in slide-in-from-bottom-8 fill-mode-both duration-700 [animation-timeline:view()] [animation-range:entry_10%_cover_35%] motion-reduce:animate-none";
