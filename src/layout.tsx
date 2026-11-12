@@ -1,5 +1,4 @@
-import { useEffect, useState, type FormEvent, type ReactNode } from "react";
-// import form from "@vibe/form";
+import { useEffect, useState, type ReactNode } from "react";
 import { Mail, MapPin, Phone, Send, User } from "lucide-react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { academic, featured } from "@/data/projects";
@@ -140,53 +139,6 @@ const socials = [
   },
 ];
 
-
-function EmailForm() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "sent">("idle");
-
-  function onSubmit(e: FormEvent) {
-    e.preventDefault();
-
-    const subject = encodeURIComponent("Portfolio Contact");
-    const body = encodeURIComponent(`Hello Yvosh,\n\nMy email is: ${email}`);
-
-    window.location.href = `mailto:cailayvosh@gmail.com?subject=${subject}&body=${body}`;
-
-    setStatus("sent");
-    setEmail("");
-  }
-
-  return (
-    <form onSubmit={onSubmit} className="mt-4">
-      <div className="flex flex-col gap-2 min-[420px]:flex-row">
-        <input
-          type="email"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Your email address"
-          aria-label="Your email address"
-          className="h-11 min-w-0 flex-1 rounded-full border border-border bg-card px-4 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        />
-
-        <button
-          type="submit"
-          className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-        >
-          <Send className="size-4" aria-hidden="true" />
-          Send
-        </button>
-      </div>
-
-      <p aria-live="polite" className="mt-2 min-h-5 text-sm text-muted-foreground">
-        {status === "sent" &&
-          "If your email app didn't open, you can write to me at cailayvosh@gmail.com."}
-      </p>
-    </form>
-  );
-}
-
 function SiteFooter() {
   const menu = "text-muted-foreground transition-colors hover:text-foreground";
   return (
@@ -196,16 +148,20 @@ function SiteFooter() {
           <p className="text-3xl font-extrabold tracking-tighter">
             yvosh<span className="text-[var(--color-21)]">.</span>
           </p>
-<p className="mt-4 font-bold">Get in touch</p>
-<p className="text-sm text-muted-foreground">Have a project in mind? Send me an email and I will get back to you.</p>
-<a
-  href="mailto:cailayvosh@gmail.com?subject=Portfolio%20Inquiry"
-  className="mt-4 inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
->
-  <Send className="size-4" aria-hidden="true" />
-  Send me an email
-</a>
-          <div className="mt-2 flex flex-wrap gap-2">
+          <p className="mt-4 font-bold">Get in touch</p>
+          <p className="text-sm text-muted-foreground">
+            Have a project in mind? Send me an email and I will get back to you.
+          </p>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=cailayvosh@gmail.com&su=Portfolio%20Inquiry"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            <Send className="size-4" aria-hidden="true" />
+            Send me an email
+          </a>
+          <div className="mt-4 flex flex-wrap gap-2">
             {socials.map((s) => (
               <a
                 key={s.label}
@@ -280,22 +236,31 @@ function SiteFooter() {
 
 function Splash() {
   const [phase, setPhase] = useState<"in" | "out" | "done">("in");
+  const [isTouch, setIsTouch] = useState(
+    () => typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia("(pointer: coarse)");
+    const update = () => setIsTouch(mq.matches);
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     if (phase !== "in") return;
-    const leave = () => setPhase("out");
     const onKey = (e: KeyboardEvent) => {
-      if (["ArrowDown", "PageDown", " ", "Enter", "Escape"].includes(e.key)) leave();
+      if (["Enter", " ", "Escape"].includes(e.key)) {
+        e.preventDefault();
+        setPhase("out");
+      }
     };
-    window.addEventListener("scroll", leave, { passive: true });
-    window.addEventListener("wheel", leave, { passive: true });
-    window.addEventListener("touchmove", leave, { passive: true });
     window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     return () => {
-      window.removeEventListener("scroll", leave);
-      window.removeEventListener("wheel", leave);
-      window.removeEventListener("touchmove", leave);
       window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
     };
   }, [phase]);
 
@@ -334,7 +299,7 @@ function Splash() {
         className="mt-10 flex flex-col items-center gap-2 text-sm font-medium text-muted-foreground animate-in fade-in fill-mode-both duration-700"
         style={{ animationDelay: "1400ms" }}
       >
-        Tap to proceed
+        {isTouch ? "Tap to proceed" : "Press Enter or click to proceed"}
         <span className="animate-bounce text-xl" aria-hidden="true">
           ↓
         </span>
