@@ -94,6 +94,7 @@ const graphics = [
   { name: "graphic-valentine-red", label: "Valentine's Bento Cake (Poster)", views: ["graphic-valentine-red", "graphic-valentine-white"], w: 1587, h: 2245 },
   { name: "graphic-recharge-poster", label: "ReCharge (Poster)", views: ["graphic-recharge-poster"], w: 2880, h: 6528 },
   { name: "graphic-pokemon-invite", label: "Pokemon Birthday Invitation", views: ["graphic-pokemon-invite"], w: 1240, h: 1748 },
+  { name: "/valentine-bento-cake.jpg", label: "Valentine's Promo (Poster Set)", views: ["/valentine-bento-cake.jpg", "/valentine-bento-cupcakes.jpg", "/valentine-cupcake.jpg"], w: 1080, h: 1920 },
 ];
 
 const graphicColumns = [[0, 6, 10], [1, 7, 8], [2, 4, 5], [3, 9]];
