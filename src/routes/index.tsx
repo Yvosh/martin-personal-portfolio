@@ -99,9 +99,15 @@ const graphics = [
 { name: "/1000031643_e9ef8024b329c8f2cc6a5c20b3504911-2_13_2026%2C%208_36_40%20AM.png", label: "Order Now (Instagram Post)", views: ["/1000031643_e9ef8024b329c8f2cc6a5c20b3504911-2_13_2026%2C%208_36_40%20AM.png"], w: 1080, h: 1080 },
 { name: "/Brown%20and%20White%20Coffee%20Buy%201%20Get%202%20Instagram%20Post%20-%201.jpg", label: "Order Now: Coffee Buy 1 Get 2 (Instagram Post)", views: ["/Brown%20and%20White%20Coffee%20Buy%201%20Get%202%20Instagram%20Post%20-%201.jpg"], w: 1080, h: 1080 },
 { name: "/1000011677_0af0d83706bb5111e2f7cc4be31e5031-2_13_2026%2C%204_32_24%20AM.jpg", label: "Laminated Nametag (Poster and Post)", views: ["/1000011677_0af0d83706bb5111e2f7cc4be31e5031-2_13_2026%2C%204_32_24%20AM.jpg", "/Post%20-%203.jpg"], w: 1080, h: 1350 },
+{ name: "/Martin_Coffee.png", label: "Coffee (Adobe Illustrator)", views: ["/Martin_Coffee.png"], w: 1080, h: 1080 },
+{ name: "/Artboard%201%20%281%29.jpg", label: "Photoshop Website Design (Exam)", views: ["/Artboard%201%20%281%29.jpg"], w: 1080, h: 1350 },
+{ name: "/Banner-Exam2%20%281%29.jpg", label: "Helmet Banner (Exam)", views: ["/Banner-Exam2%20%281%29.jpg"], w: 1600, h: 900 },
+{ name: "/1000031763_cbb9771880ff50578b9bde9bb2cde624-2_13_2026%2C%208_33_39%20AM.jpg", label: "Flowers (Instagram Post)", views: ["/1000031763_cbb9771880ff50578b9bde9bb2cde624-2_13_2026%2C%208_33_39%20AM.jpg", "/1000031760_cbb9771880ff50578b9bde9bb2cde624-2_13_2026%2C%208_33_38%20AM.jpg", "/1000031754_c663a6af690254268612feb94e23af45-2_13_2026%2C%208_33_38%20AM.jpg"], w: 1080, h: 1080 },
 ];
 
-const graphicColumns = [[0, 6, 10, 12], [1, 7, 8, 13], [2, 4, 5, 14], [3, 9, 11, 15]];
+const graphicColumns = [0, 1, 2, 3].map((c) =>
+  graphics.map((_, i) => i).filter((i) => i % 4 === c)
+);
 
 const reveal =
   "animate-in fade-in slide-in-from-bottom-8 fill-mode-both duration-700 [animation-timeline:view()] [animation-range:entry_10%_cover_35%] motion-reduce:animate-none";
