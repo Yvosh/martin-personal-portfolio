@@ -112,30 +112,34 @@ function SiteHeader() {
   );
 }
 
-const socials = [
-  {
-    label: "Facebook",
-    href: "#",
-    paths: ["M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"],
-  },
-  {
-    label: "Instagram",
-    href: "#",
-    paths: ["M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z", "M17.5 6.5h.01"],
-    rect: true,
-  },
+const socials: {
+  label: string;
+  href: string;
+  paths?: string[];
+  text?: string;
+}[] = [
   {
     label: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/martin-yvosh-caila-a7354b312",
     paths: ["M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z", "M2 9h4v12H2z", "M4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"],
   },
   {
     label: "GitHub",
-    href: "#",
+    href: "https://github.com/Yvosh",
     paths: [
       "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4",
       "M9 18c-4.51 2-5-2-7-2",
     ],
+  },
+  {
+    label: "Behance",
+    href: "https://www.behance.net/martincaila",
+    text: "Bē",
+  },
+  {
+    label: "Upwork",
+    href: "https://www.upwork.com/freelancers/~011a0939f5fce7bf69",
+    text: "Up",
   },
 ];
 
@@ -162,18 +166,26 @@ function SiteFooter() {
             Send me an email
           </a>
           <div className="mt-4 flex flex-wrap gap-2">
-            {socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                aria-label={s.label}
-                className="flex size-10 items-center justify-center rounded-full border border-border bg-card transition-transform hover:-translate-y-0.5"
-              >
-                <svg viewBox="0 0 24 24" className="size-5 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  {s.rect && <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />}
-                  {s.paths.map((d) => (
-                    <path key={d} d={d} />
-                  ))}
+           {socials.map((s) => (
+  <a
+    key={s.label}
+    href={s.href}
+    target="_blank"
+    rel="noreferrer"
+    aria-label={s.label}
+    className="flex size-10 items-center justify-center rounded-full border border-border bg-card text-sm font-extrabold transition-transform hover:-translate-y-0.5"
+  >
+    {s.paths ? (
+      <svg viewBox="0 0 24 24" className="size-5 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        {s.paths.map((d) => (
+          <path key={d} d={d} />
+        ))}
+      </svg>
+    ) : (
+      s.text
+    )}
+  </a>
+))}
                 </svg>
               </a>
             ))}
