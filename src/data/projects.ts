@@ -303,7 +303,7 @@ export const academic: AcademicProject[] = [
 
   {
     slug: "website-proposal-redesigning",
-    cover: "bundle_of_joy.png",
+    cover: "/bundle_of_joy.png",
     tag: "Design",
     title: "Website Proposal Redesigning",
     text: "A proposed redesign of the Bundle of Joy website (bundleofjoy.com.ph), covering the desktop pages and a mobile version.",
@@ -311,7 +311,7 @@ export const academic: AcademicProject[] = [
       ["Designed With", "Figma"],
       ["Project Type", "Proposed redesign"],
     ],
-    image: "bundle_of_joy.png",
+    image: "/bundle_of_joy.png",
     color: c18,
     screenshots: ["/1st.png", "/Logged%20In-1.png", "/Moms%20Club%20Reg.png"],
     gallery: [
