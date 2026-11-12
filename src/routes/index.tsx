@@ -97,7 +97,7 @@ const graphics = [
   { name: "/valentine-bento-cake.jpg", label: "Valentine's Promo (Poster Set)", views: ["/valentine-bento-cake.jpg", "/valentine-bento-cupcakes.jpg", "/valentine-cupcake.jpg"], w: 1080, h: 1920 },
 ];
 
-const graphicColumns = [[0, 6, 10], [1, 7, 8], [2, 4, 5], [3, 9]];
+const graphicColumns = [[0, 6, 10], [1, 7, 8], [2, 4, 5], [3, 9, 11]];
 
 const reveal =
   "animate-in fade-in slide-in-from-bottom-8 fill-mode-both duration-700 [animation-timeline:view()] [animation-range:entry_10%_cover_35%] motion-reduce:animate-none";
