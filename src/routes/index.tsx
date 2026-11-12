@@ -90,7 +90,7 @@ const graphics = [
   { name: "yvosh-graphic-g4-1", label: "OISHI SUSHI (Carousel Instagram Post)", views: ["yvosh-graphic-g4-1", "yvosh-graphic-g4-0", "yvosh-graphic-g4-2", "yvosh-graphic-g4-3", "yvosh-graphic-g4-4", "yvosh-graphic-g4-5", "yvosh-graphic-g4-6", "yvosh-graphic-g4-7", "yvosh-graphic-g4-8"], w: 2000, h: 1500 },
   { name: "graphic-normal-distribution", label: "Normal Distribution (Infographic)", views: ["graphic-normal-distribution"], w: 800, h: 2600 },
   { name: "graphic-dads-day", label: "Dad's Day Bento Cake (Poster)", views: ["graphic-dads-day"], w: 1080, h: 1920 },
-  { name: "graphic-mothers-day", label: "Mother's Day Bento Cake (Poster)", views: ["graphic-mothers-day", "1000014087_50750b1e7a222781f389b0e8f0eca1e0-5_2_2026,%2012_34_50%20AM.jpg"], w: 1080, h: 1920 },
+{ name: "graphic-mothers-day", label: "Mother's Day Bento Cake (Poster)", views: ["graphic-mothers-day", "/1000014087_50750b1e7a222781f389b0e8f0eca1e0-5_2_2026%2C%2012_34_50%20AM.jpg"], w: 1080, h: 1920 },
   { name: "graphic-valentine-red", label: "Valentine's Bento Cake (Poster)", views: ["graphic-valentine-red", "graphic-valentine-white"], w: 1587, h: 2245 },
   { name: "graphic-recharge-poster", label: "ReCharge (Poster)", views: ["graphic-recharge-poster"], w: 2880, h: 6528 },
   { name: "graphic-pokemon-invite", label: "Pokemon Birthday Invitation", views: ["graphic-pokemon-invite"], w: 1240, h: 1748 },
