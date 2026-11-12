@@ -300,7 +300,6 @@ export const academic: AcademicProject[] = [
     screenshots: ["yvosh-acad-coffee", "yvosh-work-restaurant", "yvosh-work-studio"],
     gallery: ["yvosh-coffee-product-management-product", "yvosh-coffee-product-management-categories", "yvosh-coffee-new-product-basic", "yvosh-coffee-new-product-variant", "yvosh-coffee-new-category-add", "yvosh-coffee-edit-basic", "yvosh-coffee-edit-variants", "yvosh-coffee-edit-categories", "yvosh-coffee-view-variants-product", "yvosh-coffee-view-variants-categories"],
   },
-];
 
   {
     slug: "website-proposal-redesigning",
@@ -329,6 +328,7 @@ export const academic: AcademicProject[] = [
       { title: "Mobile version", start: 4 },
     ],
   },
+];
 
 export const templates = Array.from({ length: 12 }, (_, i) => `yvosh-template-${String(i + 1).padStart(2, "0")}`);
 
